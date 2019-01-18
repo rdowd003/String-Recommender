@@ -96,7 +96,18 @@ string_names = []
 
 #User input
 n = int(input('How many strings would you like recs for? Enter number (1+): '))
-user_string = input('What string do you currently use? Enter name and gauge (e.g.: Prince Lightning 16): ')
+
+yn = input('Do you know your string? Enter yes or no: ')
+if yn == 'yes':
+    user_string = input('What string do you currently use? Enter name and gauge (e.g.: Prince Lightning 16): ')
+elif yn == 'no':
+    user_brand = input('Enter brand to search: ')
+    df_brand = original[['brand','model']][original['brand']==user_brand]
+
+print(df_brand)
+user_string = input("which string?: ")
+
+
 
 
 string_list = list(strings)
