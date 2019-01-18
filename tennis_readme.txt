@@ -57,16 +57,9 @@ Spin Potential	spin_pot	stb COF / sts COF
 ******************************** To Do *********************************
   -Investigate missing material type for 18 strings with material NaN
 
-  -Standardize gauge_nom column & map to 15-19 scale
-    - Some are 0.0
-      n = 27 (3x9)
-        Diadem Solstice Pro 16L (1.25) --> 16L
-        Double AR Twice Shark (1.25) --> 16L
-        Tecnifibre HDX Tour 16 (1.30) --> 16
-    - Some are 1.0
-      n = 9
-        Gosen Polymaster II 16
-    - Solinco Hyper-G 16 --> gauge_nom is "16.0"
+  - Return recs with pertinent info like brand, gauge, material
+
+  - Add gauge to bins (15-19) to "original" dataframe for serving recs
 
   - Incorrect brands:
     - Mantis
@@ -74,6 +67,8 @@ Spin Potential	spin_pot	stb COF / sts COF
     - One
     - Poly
 
+  - Narrow strings down to top 100 most similar and allow user to include
+  preferences (gauge, spin potential, max_tension, etc. to narrow it down)
 
 
 ********************** Notes from TWU Experiments **********************
