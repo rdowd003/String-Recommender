@@ -36,6 +36,52 @@ String/Ball COF	stb_cof	coef of fric
 Spin Potential	spin_pot	stb COF / sts COF
 
 
+BRANDS:
+Alien
+Alpha
+Ashaway
+Babolat
+Boris
+Diadem
+Double
+Dunlop
+Forten
+Gamma
+Genesis
+Gosen
+Head
+IsoSpeed
+Kirschbaum
+Klip
+L-Tec
+LaserFibre
+Leopard
+Luxilon
+Mantis
+MSV
+One
+Pacific
+Poly
+Polyfibre
+Prince
+RS
+Signum
+Solinco
+Super
+SuperString
+Tecnifibre
+Toalson
+Topspin
+Tourna
+Volkl
+Weiss
+Wilson
+Y-Tex
+Yonex
+
+
+
+
 *****************************  Data Prep  ******************************
 
 ** Edited:
@@ -67,9 +113,27 @@ Spin Potential	spin_pot	stb COF / sts COF
     - One
     - Poly
 
-  - Narrow strings down to top 100 most similar and allow user to include
-  preferences (gauge, spin potential, max_tension, etc. to narrow it down)
+  - Confirm cleaning process and save cleaned df to csv / save similarity
+  matrix as a csv as well for app to open and read from 
 
+
+
+
+  - Clean up dataset and then save it as the clean form in csv
+
+  - Launch flask app:
+        - The app only needs to do the filtering based on responses (should
+        simply open csv files that are cleaned df and similarity matrix)
+        - Similarity range slider/drop down (min = most similar, max = most different)
+        - Preferences to filter by
+            - limit recommender to specific material, brand
+        - Quick-guide page:
+            - How gauge effects things
+            - What spin potential is
+
+  - Better diversify results (e.g., various materials, range of spin potential, etc)
+        -  Narrow strings down to top 100 most similar and allow user to include
+        preferences (gauge, spin potential, max_tension, etc. to narrow it down)
 
 ********************** Notes from TWU Experiments **********************
 
