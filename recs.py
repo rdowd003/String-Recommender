@@ -145,7 +145,14 @@ string_list = list(strings)
 
 
 #User input for string - user brand search if necessary
-n = int(input('How many string recommendations would you like to receive? Enter numeric value < 50: '))
+while True:
+    try:
+        n = input('How many string recommendations would you like to receive? Enter numeric value < 50: ')
+        n = int(n)
+        break
+    except ValueError:
+        print("No valid integer! Please try again: ")
+
 yn = input('Do you know your string that you want recs for? Enter yes or no: ')
 
 
